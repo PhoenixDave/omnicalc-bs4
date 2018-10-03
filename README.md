@@ -15,6 +15,8 @@ Follow the usual setup steps:
 
  1. Once the previous step completes successfully and you're back at the `$` prompt, launch your Rails application server by clicking the "Run Project" button at the top of the IDE. You'll know it launched when it says "Press Ctrl-C to stop".
  1. Visit the live application preview URL that it gives you to see the app running.
+ 1. As you work, remember to navigate to `/git` and **commit often as you work.**
+ 1. Make new branches freely to experiment! _Especially_ before starting on a new task.
 
 ## First target
 
