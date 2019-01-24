@@ -9,9 +9,11 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: :development
-gem "pg", '~> 0.21', group: :production
-gem "rails_12factor", group: :production
+
+group :production do
+  gem "pg"
+  gem "rails_12factor"
+end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -54,6 +56,7 @@ group :development, :test do
   gem 'draft_log', github: 'firstdraft/draft_log'
   gem 'grade_runner', github: 'firstdraft/grade_runner'
   gem 'pry-rails'
+  gem 'sqlite3'
   gem 'web_git', github: 'firstdraft/web_git'
 end
 
@@ -64,6 +67,7 @@ group :development do
   gem 'draft_generators', github: 'firstdraft/draft_generators'
   gem 'letter_opener'
   gem 'meta_request'
+
 end
 
 group :test do
@@ -73,5 +77,5 @@ group :test do
   gem 'webmock'
 end
 
-gem 'activeadmin', github: 'activeadmin/activeadmin'
-gem 'devise', github: 'plataformatec/devise'
+gem 'activeadmin'
+gem 'devise'
